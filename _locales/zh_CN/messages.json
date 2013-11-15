@@ -1,0 +1,13 @@
+{
+    "extName": {
+        "message": "简单 QR 生成器"
+    },
+
+    "extDesp": {
+        "message": "根据当前页面的 URL 生成 QR 码"
+    },
+
+    "waiting": {
+        "message": "请稍等…"
+    }
+}

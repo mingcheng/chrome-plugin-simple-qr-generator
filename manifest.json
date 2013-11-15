@@ -1,0 +1,16 @@
+﻿{
+    "manifest_version": 2,
+    "default_locale": "zh_CN",
+    "name": "__MSG_extName__",
+    "version": "1.0.0",
+    "description": "__MSG_extDesp__",
+    "icons": { "128": "icon_128.png", "32":"icon_32.png" },
+    "browser_action": {
+        "default_icon": "icon_32.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
