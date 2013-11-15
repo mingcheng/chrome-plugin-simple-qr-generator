@@ -7,7 +7,7 @@
 Zepto(function($) {
     chrome.tabs.getSelected(null, function(tab) {
         var url = "https://chart.googleapis.com/chart?cht=qr"+
-                  "&chs=200x200&choe=UTF-8&chld=L|0&chl=" + tab.url + "";
+                  "&chs=200x200&choe=UTF-8&chld=Q|0&chl=" + tab.url + "";
 
         if (tab.favIconUrl) {
             $("#fav").attr("src", tab.favIconUrl).show();
