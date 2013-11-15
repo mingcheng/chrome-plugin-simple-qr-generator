@@ -7,7 +7,15 @@
 Zepto(function($) {
     chrome.tabs.getSelected(null, function(tab) {
         var url = "https://chart.googleapis.com/chart?cht=qr"+
-                  "&chs=144x144&choe=UTF-8&chld=L|0&chl=" + tab.url + "";
+                  "&chs=200x200&choe=UTF-8&chld=L|0&chl=" + tab.url + "";
+
+        if (tab.favIconUrl) {
+            $("#fav").attr("src", tab.favIconUrl).show();
+        }
+
+        $("#fav, #qr").bind("error", function(e) {
+            $(e.target).hide();
+        });
 
         $("#qr").attr("src", url);
     });

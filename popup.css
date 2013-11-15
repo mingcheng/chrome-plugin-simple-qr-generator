@@ -1,0 +1,36 @@
+/* vim: set et sw=4 ts=4 sts=4 ft=css fdm=marker ff=unix fenc=utf8 nobomb: */
+/**
+ * @author mingcheng<lucky#gracecode.com>
+ * @date   2013-11-15
+ * @link   http://www.gracecode.com/
+ */
+
+* {padding: 0; margin: 0;}
+
+body {
+    background: #fff;
+}
+
+body #content {
+    position: relative;
+}
+
+body #content #qr {
+    background: #fff;
+    padding: 5px;
+}
+
+body #content #fav {
+    display: none;
+    opacity: .95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+    margin-top: -16px;
+    border-radius: 5px;
+}
