@@ -1,11 +1,17 @@
 # Chrome 小插件，简单 QR 码生成器
 
-![Screenshots](http://files.gracecode.com/2013_11_15/1384502477.png)
+![Screenshots](http://files.gracecode.com/2013_11_15/1384505799.png)
 
 根据当前页面的 URL 生成 QR 码
 
 
 ## FAQ
+
+### 这玩意干嘛用的？
+
+* 使用智能手机扫描 QR 码便可以在移动端打开对应的页面，省去逐字输入的麻烦（而且容易出错）；
+* 分享到微信、微博等；
+* 便于保存和管理 URL 片段。
 
 ### 如何保存 QR 码呢？
 
