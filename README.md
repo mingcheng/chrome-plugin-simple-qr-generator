@@ -1,4 +1,4 @@
-# Chrome 小插件，简单 QR 码生成器
+# Chrome 小插件，简单 QR 码生成器
 
 ![Screenshots](http://files.gracecode.com/2013_11_15/1384502477.png)
 
