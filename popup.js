@@ -5,21 +5,23 @@
  */
 
 Zepto(function($) {
-    chrome.tabs.getSelected(null, function(tab) {
-        /*
-        var url = "https://chart.googleapis.com/chart?cht=qr"+
-                  "&chs=200x200&choe=UTF-8&chld=Q|0&chl=" + tab.url + "";
-        */
+    var QRCodeBox = new QRCode(document.getElementById("qr"), {
+        width : 200,
+        height : 200
+    });
 
-        var url = "http://c.wotula.com/chart.php?size=32&level=H&val=" + encodeURIComponent(tab.url);
+
+    chrome.tabs.getSelected(null, function(tab) {
+        //var url = "http://c.wotula.com/chart.php?size=32&level=H&val=" + encodeURIComponent(tab.url);
         if (tab.favIconUrl) {
             $("#fav").attr("src", tab.favIconUrl).show();
-        }
+        } 
 
         $("#fav, #qr").bind("error", function(e) {
             $(e.target).hide();
         });
 
-        $("#qr").attr("src", url);
+        QRCodeBox.makeCode(tab.url);
+        //$("#qr").attr("src", url);
     });
 });
